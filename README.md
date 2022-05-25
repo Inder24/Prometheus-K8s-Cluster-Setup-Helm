@@ -2,11 +2,11 @@
 This repository contains the steps to setup a Prometheus cluster setup using Helm Charts. Easy and straightforward to make it.
 
 
-**#Pre-Requiste**
+# Pre-Requiste
 You should have a clean minikube/ docker-desktop kubernetes cluster ready.
 Helm Should also be installed. For installation links, check here -> https://helm.sh/docs/intro/install/
 
-**#Commands to run **
+# Commands to run 
 
 "helm repo add prometheus-community https://prometheus-community.github.io/helm-charts"
 
