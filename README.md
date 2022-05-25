@@ -17,3 +17,11 @@ Helm Should also be installed. For installation links, check here -> https://hel
 ### This would have installed all the services and deployments required to have prometheus in your cluster.
 To Verify this, just run "kubectl get all "
 
+# We can know more information about the deployment by parsing the details in a yaml file like the below commands:
+
+"kubectl get statefulset"
+"kubectl describe statefulset prometheus-prometheus-kube-prometheus-prometheus > prom.yaml"
+"kubectl describe deployment prometheus-kube-prometheus-operator> operator.yaml"
+
+
+
