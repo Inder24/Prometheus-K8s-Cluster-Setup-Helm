@@ -17,7 +17,7 @@ Helm Should also be installed. For installation links, check here -> https://hel
 ### This would have installed all the services and deployments required to have prometheus in your cluster.
 To Verify this, just run "kubectl get all "
 
-# We can know more information about the deployment by parsing the details in a yaml file like the below commands:
+### We can know more information about the deployment by parsing the details in a yaml file like the below commands:
 
 "kubectl get statefulset"
 
@@ -25,7 +25,7 @@ To Verify this, just run "kubectl get all "
 
 "kubectl describe deployment prometheus-kube-prometheus-operator> operator.yaml"
 
-## To Access Grafana UI
+# To Access Grafana UI
 "kubectl get pod"  -> get the grafana pod name
 
 "kubectl logs prometheus-grafana-84994bb66-qfgrr" -> find port number and user name
