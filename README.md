@@ -64,9 +64,19 @@ For any application that we want to monitor, we would require 3 component
 
 We can do all this, or just directly run helm chart command for it.
 
-*SIDE NOTE - We can override values using chart parameters if we dont want default setting. We can know this by using
+"helm repo add prometheus-community https://prometheus-community.github.io/helm-charts"
 
-*" helm show values {chart name} "
+"helm repo update"
+
+"helm install mongodb-exporter prometheus-community/prometheus-mongodb-exporter -f value.yaml"
+
+To check if everythign is setup -
+"helm show values prometheus-community/prometheus-mongodb-exporter"
+
+
+*SIDE NOTE - We can override values using chart parameters if we dont want default setting. We can know this by using*
+
+*" helm show values {chart name} "*
 
 
 
