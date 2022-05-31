@@ -47,7 +47,7 @@ We can see that servicemonitors are monitoring all the metrics that Prometheus w
 To see any deployment/servicemonitor/pod file , use the below command
 "kubectl get {name} -oyaml"
 
-# Create MongoDb pods
+# Create MongoDb pods and exporter
 copy the mongodb.yaml file and run the below command from same path structure where the file is present
 
 " kubectl apply -f mongodb.yaml "
@@ -78,7 +78,11 @@ To check if everythign is setup -
 
 *" helm show values {chart name} "*
 
+# To verify the metrics
 
+"kubectl port-forward service/mongodb-exporter-prometheus-mongodb-exporter 9216"  -> we can see mongoDB metric exposed by exporter "
 
+Can go and check prometheus UI to see the metrics being monitored. (Port forwarding done in above command)
+We would also do port forwarding on Grafana to see the charts. (Same as above commands)
 
 
