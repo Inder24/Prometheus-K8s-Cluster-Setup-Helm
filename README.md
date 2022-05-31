@@ -62,5 +62,13 @@ For any application that we want to monitor, we would require 3 component
 2- Service ( for connecting to the exporter)
 3- ServiceMonitor ( so that the application can be discovered by prometheus. It needs to know that new application is there to monitor)
 
+We can do all this, or just directly run helm chart command for it.
+
+*SIDE NOTE - We can override values using chart parameters if we dont want default setting. We can know this by using
+
+*" helm show values {chart name} "
+
+
+
 
 
