@@ -34,6 +34,12 @@ To Verify this, just run "kubectl get all "
 
 Open browser and wrtie "localhost:3000" to access grafana Ui . Id/Pwd -> admin/prom-operator
 
+# To access prometheus UI
+
+" kubectl get svc "  -> get the service name of prometheus
+
+" kubectl port-forward service/prometheus-kube-prometheus-prometheus 9090 "
+
 
 
 
